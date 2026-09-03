@@ -1,0 +1,2356 @@
+/*PARTE DE DIANA*/
+.body {
+    background-color: #FEFEFE;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border: 2px solid #e9a5be;
+    border-radius: 25px;
+
+    padding: 12px 25px;
+    margin: 10px auto;
+
+    width: 95%;
+    max-width: 1400px;
+
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.navbar-brand img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.navbar-brand span {
+    font-family: 'Poppins', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #765199;
+}
+
+.nav-item {
+    margin: 0 5px;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3cfdc;
+    border: 2px solid #f3cfdc;
+    border-radius: 20px;
+    padding: 8px 25px;
+    transition: 0.3s;
+}
+
+/* 
+=========================
+         HERO
+==========================
+*/
+.info {
+    transform: translateY(-50px);
+}
+
+.kuki-logo {
+    width: 620px;
+    height: auto;
+    object-fit: contain;
+    transform: translateY(40px);
+}
+
+.kuki-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 98px;
+    font-weight: 500;
+    color: #765197;
+    letter-spacing: 2px;
+}
+
+.kuki-slogan {
+    font-family: 'Parisienne', cursive;
+    color: #aa4d6f;
+    font-size: 48px;
+}
+
+.kuki-descripcion {
+    font-family: 'Poppins', serif;
+    font-size: 18px;
+}
+
+.btn-kuki {
+    font-family: 'Poppins', serif;
+    font-size: 17px;
+    background-color: #eba9c1;
+    border: 2px solid #eba9c1;
+    border-radius: 20px;
+    padding: 8px 25px;
+    transition: 0.3s;
+}
+
+.titulo-seccion {
+    font-family: 'Playfair Display', serif;
+    font-size: 78px;
+    font-weight: 400;
+    color: #765197;
+}
+
+.descripcion-seccion {
+    font-family: 'Parisienne', cursive;
+    color: #aa4d6f;
+    font-size: 38px;
+}
+
+.kuki-cafeygalletas {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 0;
+    overflow: hidden;
+}
+
+.kuki-cafeygalletas img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.subtitulo-seccion {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 400;
+    color: #765197
+}
+
+.otro-titulo-seccion {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    font-weight: 300;
+    text-align: center;
+    color: #765197;
+    margin-bottom: 10px;
+}
+
+.tarjeta {
+    border-radius: 25px;
+
+    padding: 20px 15px 25px 15px;
+
+    width: 100%;
+    min-height: 420px;
+
+    background: linear-gradient(
+        to bottom,
+        #e3dce7 0%,
+        #d9b6e0 60%,
+        #b07ece 100%
+    );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(117, 85, 166, 0.12);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.tarjeta h3 {
+    font-family: 'Poppins', serif;
+    font-size: 27px;
+    color: #7555A6;
+
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #332D35;
+    max-width: 280px;
+    margin-bottom: 20px;
+}
+
+.imagen-tarjeta {
+    width: 320px;
+    height: 270px;
+    object-fit: contain;
+    margin-top: auto;
+}
+
+.imagen-conoce {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+/* PARTE DE DIANA QUIENES SOMOS */
+/* VARIABLES */
+:root {
+    --morado: #76529b;
+    --morado-oscuro: #5b3d7d;
+    --morado-claro: #eee3f3;
+    --lila: #d8c1df;
+
+    --rosado: #df91b1;
+    --rosado-claro: #f8e4ec;
+
+    --crema: #fcf8f4;
+    --blanco: #ffffff;
+
+    --texto: #342b3d;
+}
+
+
+/*GENERAL */
+.quienes-somos {
+    background: #fcf8f4;;
+    color: var(--texto);
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*INTRODUCCIÓN*/
+.about-intro {
+    min-height: 620px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 90px 0;
+}
+
+.about-text {
+    max-width: 550px;
+}
+
+.minititulo {
+    color: #aa4d6f;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.kuki-titulo2 {
+    margin: 12px 0 0;
+    color: #765197;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(55px, 6vw, 82px);
+}
+
+.kuki-slogan2 {
+    margin: 15px 0 30px;
+    color: #aa4d6f;
+    font-size: 40px;
+    font-family: 'Parisienne',cursive;
+    font-weight: 400;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #d5b6e0;
+    border-radius: 45% 45% 45% 20%;
+    top: -15px;
+    left: -15px;
+    z-index: 0;
+}
+
+.about-image img {
+    position: relative;
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 45% 45% 45% 20%;
+    z-index: 1;
+}
+
+/* MISIÓN Y VISIÓN */
+.mission-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 12px 0 90px;
+}
+
+.info-card {
+    position: relative;
+    padding: 55px 50px;
+    min-height: 300px;
+    border-radius: 25px;
+    border: 1px solid #eaddeb;
+    box-shadow: 0 10px 30px rgba(93, 65, 115, .08);
+    text-align: center;
+    overflow: hidden;
+}
+
+.info-card.mission {
+    background: #efd8f7;
+}
+
+.info-card.vision {
+    background: #f8e4ec
+}
+
+.card-line {
+    width: 55px;
+    height: 5px;
+    margin: 0 auto 25px;
+    border-radius: 10px;
+    background: #765197;
+}
+
+.vision .card-line {
+    background: #aa4d6f;
+}
+
+.info-card h3 {
+    color: #765197;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.vision h3 {
+    color: #aa4d6f;
+}
+
+.info-card p {
+    font-family: 'Poppins', serif;
+    max-width: 500px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* VALORES */
+.valores {
+    background: #f4eaf6;
+    padding: 60px 0;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title h2 {
+    margin: 5px 0;
+    color: #765197;
+    font-family: Georgia, serif;
+    font-size: 65px;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.valor {
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.valor-circle {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 1px solid #cdb4d8;
+    background: rgba(255,255,255,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valor-circle span {
+    color: var(--morado);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.valor h3 {
+    color: #765199;
+    font-family: 'Poppins', serif;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.valor p {
+    font-family: 'Poppins', serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Separadores */
+
+.valor:not(:last-child) {
+    border-right: 1px solid #d9c9df;
+}
+
+
+/* COMPROMISO */
+.compromiso {
+    background: #fcf8f4;
+    padding: 100px 0;
+}
+.compromiso-content {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.compromiso-text h2 {
+    color: #765197;
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    line-height: 1.1;
+    margin: 5px 0 25px;
+}
+.compromiso-text h2 strong {
+    font-family: 'Parisienne', cursive;
+    color: #aa4d6f;
+    display: block;
+    font-size: 58px;
+    font-weight: 400;
+}
+
+.compromisos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.compromiso-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.compromiso-item span {
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background:#aa4d6f;;
+}
+
+.compromiso-item p {
+    font-family: 'Poppins', serif;
+    font-size: 17px;
+    margin: 0%;
+}
+
+/* Imagen */
+.compromiso-image {
+    position: relative;
+}
+
+.compromiso-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 35px 35px 35px 100px;
+    border: 8px solid white;
+    box-shadow: 0 15px 40px rgba(91, 61, 125, .12);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-intro {
+        grid-template-columns: 1fr;
+
+        padding: 70px 0;
+
+        gap: 40px;
+    }
+
+
+    .about-text {
+        max-width: 100%;
+    }
+
+
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+
+
+    .valores-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 35px;
+    }
+
+
+    .valor:not(:last-child) {
+        border-right: none;
+    }
+
+
+    .compromiso-content {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-text h1 {
+        font-size: 55px;
+    }
+
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+
+    .about-image img {
+        height: 350px;
+    }
+
+
+    .info-card {
+        padding: 40px 25px;
+    }
+
+
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-title h2 {
+        font-size: 38px;
+    }
+
+
+    .compromiso-text h2 {
+        font-size: 38px;
+    }
+
+
+    .compromiso-text h2 strong {
+        font-size: 32px;
+    }
+
+
+    .compromiso-image img {
+        height: 330px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Parte Yesly */
+.problema-pagina {
+    font-family: 'Poppins', sans-serif;
+    color: #302338;
+    overflow: hidden;
+}
+
+.problema-pagina h1,
+.problema-pagina h2,
+.problema-pagina h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* ---------------------------------------------------------
+   HERO - EL PROBLEMA
+   --------------------------------------------------------- */
+
+.problema-hero {
+    position: relative;
+    padding: 10px 0 10px;
+    background: #faf7fc,
+
+}
+
+.problema-etiqueta {
+    font-family: 'Parisienne', cursive;
+    color: #aa4d6f;
+    font-size: 48px;
+    display: inline-block;
+}
+
+.problema-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    font-weight: 500;
+    color: #765197;
+    letter-spacing: 2px;
+}
+
+.problema-imagen {
+    position: relative;
+    z-index: 2;
+    width: 85%;
+    max-width: 500px;
+    height: 430px;
+    object-fit: cover;
+}
+.problema-causas {
+    padding: 100px 0;
+    background-color: #fcf8f4;
+}
+
+.problema-encabezado {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Tarjetas */
+.problema-card {
+    position: relative;
+    padding: 55px 50px;
+    min-height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(93, 65, 115, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problema-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(93, 65, 115, 0.12);
+}
+
+.problema-card-causa {
+    background: #efd8f7;
+}
+
+.problema-card-consecuencia {
+    background: #f8e4ec;
+}
+
+/* Línea decorativa superior */
+.card-line {
+    width: 55px;
+    height: 5px;
+    margin: 0 auto 25px;
+    border-radius: 10px;
+    background: #765197;
+}
+
+.problema-card-consecuencia .card-line {
+    background: #aa4d6f;
+}
+
+/* Títulos centrados */
+.problema-card-contenido h3 {
+    color: #765197;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.problema-card-contenido h3.a {
+    color: #aa4d6f;
+}
+
+/* Listas alineadas a la izquierda */
+.problema-card-contenido ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.problema-card-contenido li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #5f5363;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Círculo/Viñeta personalizada */
+.problema-card-contenido li::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #aa4d6f;
+}
+
+.problema-card-causa .problema-card-contenido li::before {
+    background: #765197;
+}
+
+/* ---------------------------------------------------------
+   PÚBLICO OBJETIVO
+   --------------------------------------------------------- */
+
+.problema-publico {
+    padding: 100px 0;
+    background: #ffffff 100%;
+}
+
+.problema-publico-card {
+    height: 100%;
+    padding: 40px 30px;
+    background-color: #f8e4ec;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.problema-publico-numero {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #efe2f1;
+    color: #8b4f98;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+
+.problema-publico-card h3 {
+    margin-bottom: 15px;
+    color: #765197;
+    font-family: Georgia, serif;
+    font-size: 29px;
+}
+
+.problema-publico-card p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #5f5363;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   NECESIDADES
+   --------------------------------------------------------- */
+
+.problema-necesidades {
+    padding: 100px 0;
+    background-color: #faf7fc;
+}
+
+.problema-necesidad-card {
+    position: relative;
+    height: 100%;
+    padding: 35px 28px;
+    border-radius: 20px;
+    background: #f7e5fc;
+    border: 1px solid #eaddea;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.problema-necesidad-numero {
+    font-family: 'Playfair Display', serif;
+    display: block;
+    margin-bottom: 18px;
+    color: #a15bac;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.problema-necesidad-card h3 {
+    margin-bottom: 13px;
+    color: #42294d;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.problema-necesidad-card p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #5f5363;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------
+   SECCIÓN FINAL
+   --------------------------------------------------------- */
+.problema-final {
+    position: relative;
+    padding: 60px 0 20px;
+    background: var(--blanco);
+}
+
+.problema-final-contenido {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.problema-final-contenido span,
+.problema-final-contenido .etiqueta {
+    display: block;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.problema-final-contenido h2 {
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.problema-final-contenido p {
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.problema-final-contenido a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* ---------------------------------------------------------
+   BOTÓN
+   --------------------------------------------------------- */
+
+.problema-boton {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #5b3564;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.problema-boton:hover {
+    background-color: #efc6dc;
+    color: #43294c;
+    transform: translateY(-3px);
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 991px) {
+
+    .problema-hero {
+        padding: 80px 0;
+    }
+
+    .problema-imagen-contenedor {
+        min-height: 400px;
+        margin-top: 20px;
+    }
+
+    .problema-imagen {
+        width: 75%;
+        height: 380px;
+    }
+
+    .problema-circulo-decorativo {
+        width: 340px;
+        height: 340px;
+    }
+
+    .problema-causas,
+    .problema-publico,
+    .problema-necesidades {
+        padding: 80px 0;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .problema-hero {
+        padding: 60px 0;
+    }
+
+    .problema-titulo {
+        font-size: 2.7rem;
+    }
+
+    .problema-texto {
+        font-size: 0.92rem;
+    }
+
+    .problema-imagen-contenedor {
+        min-height: 330px;
+    }
+
+    .problema-imagen {
+        width: 78%;
+        height: 320px;
+    }
+
+    .problema-circulo-decorativo {
+        width: 280px;
+        height: 280px;
+    }
+
+    .problema-card {
+        padding: 35px 28px;
+    }
+
+    .problema-causas,
+    .problema-publico,
+    .problema-necesidades {
+        padding: 65px 0;
+    }
+
+    .problema-final {
+        padding: 80px 20px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .problema-titulo {
+        font-size: 2.3rem;
+    }
+
+    .problema-imagen {
+        width: 85%;
+        height: 290px;
+    }
+
+    .problema-circulo-decorativo {
+        width: 245px;
+        height: 245px;
+    }
+}
+
+
+
+
+
+/*PARTE DE SHATTY*/
+/*VARIABLES Y RESET GENERAL */
+:root {
+  --kuki-lavanda: #765197;
+  --kuki-lavanda-oscura: #5e3f80;
+  --kuki-lavanda-suave: #eee7f6;
+  --kuki-lavanda-media: #7555A6;
+  --kuki-fresa: #eba9c1;
+  --kuki-fresa-intensa: #aa4d6f;
+  --kuki-fresa-pastel: #f3cfdc;
+  --kuki-fresa-borde: #e9a5be;
+  --kuki-crema: #fffafc;
+  --kuki-tostado: #41384b;
+  --kuki-blanco: #ffffff;
+  --kuki-footer-bg: #E1B6EF;
+  --rosado-claro: #fcebf3;
+  --morado-claro: #f3e8f5;
+  --sombra-magica: 0 12px 30px rgba(118, 81, 154, 0.13);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*ELEMENTOS GLOBALES / SECCIONES GENERALES*/
+.experiencia-kuki {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Encabezado Principal */
+.experiencia-kuki > header {
+  padding: 60px 20px 40px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.titulo-ok {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(25px, 5vw, 4rem);
+  color: var(--kuki-lavanda);
+  margin-bottom: 10px;
+}
+
+.eslogan-oki {
+  color: var(--kuki-fresa-intensa);
+  font-family: 'Parisienne', cursive;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  margin-bottom: 18px;
+}
+
+.intro-deliciosa {
+  font-family: 'Poppins', sans-serif;
+  max-width: 760px;
+  margin: auto;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* BLOQUE 1: NUESTRA SOLUCIÓN (Fondo Crema) */
+.bloque-experiencias {
+  background-color: var(--kuki-crema);
+  border-top: 1px solid rgba(234, 221, 236, 0.6);
+  border-bottom: 1px solid rgba(234, 221, 236, 0.6);
+  padding: 80px 0;
+}
+
+.bloque-experiencias > .encabezado-seccion,
+.bloque-experiencias > .okay-sabores {
+  width: min(1120px, 92%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.encabezado-seccion {
+  font-family: 'Playfair Display', serif;
+  color: var(--kuki-fresa-intensa);
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.encabezado-seccion h2 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  margin-bottom: 10px;
+}
+
+.encabezado-seccion p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.okay-sabores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.tarjeta-delicia {
+  background: var(--kuki-blanco);
+  border: 1px solid #eaddec;
+  border-radius: 25px;
+  padding: 38px 24px;
+  text-align: center;
+  box-shadow: var(--sombra-magica);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.tarjeta-delicia:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 35px rgba(118, 81, 154, 0.18);
+}
+
+.tarjeta-delicia h3 {
+  color: var(--kuki-fresa-intensa);
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.tarjeta-delicia p {
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--kuki-tostado);
+  line-height: 1.5;
+}
+
+/* BLOQUE 2: DIFERENCIADORES (Fondo Blanco) */
+.seccion-diferenciadores {
+  width: min(1120px, 92%);
+  margin: 90px auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.panel-destacado-morado {
+  padding: 45px;
+  border-radius: 28px;
+  background: var(--morado-claro);
+  color: var(--kuki-blanco);
+  box-shadow: var(--sombra-magica);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panel-destacado-morado h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--kuki-lavanda);
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.panel-destacado-morado p {
+  font-family: 'Poppins', sans-serif;
+  color: var(--kuki-tostado);
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.lista-puntos-clave {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+}
+
+.lista-puntos-clave li {
+  background: var(--kuki-blanco);
+  border: 1px solid #eaddec;
+  border-radius: 18px;
+  padding: 20px 24px;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 7px 18px rgba(118, 81, 154, 0.07);
+}
+
+.lista-puntos-clave strong {
+  color: var(--kuki-lavanda);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BLOQUE 3: CÓMO FUNCIONA (Fondo Crema) */
+.receta-paso-a-paso {
+  background-color: var(--kuki-crema);
+  border-top: 1px solid rgba(234, 221, 236, 0.6);
+  padding: 80px 0 0;
+  text-align: center;
+}
+
+.receta-paso-a-paso > .encabezado-seccion,
+.receta-paso-a-paso > .linea-de-pasos {
+  width: min(1120px, 92%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linea-de-pasos {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-content: center;
+}
+
+.tarjeta-paso {
+  padding: 35px 24px;
+  background: var(--kuki-blanco);
+  border: 1px solid #eaddec;
+  border-radius: 25px;
+  box-shadow: var(--sombra-magica);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-paso:hover {
+  transform: translateY(-5px);
+}
+
+.insignia-numero {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 18px auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--rosado-claro);
+  color: var(--kuki-fresa-intensa);
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tarjeta-paso h3 {
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--kuki-fresa-intensa);
+  margin-bottom: 10px;
+}
+
+.tarjeta-paso p {
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--kuki-tostado);
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* 7. PIE DE PÁGINA, El hermosicimo footer*/
+.footer {
+  margin-top: 60px;
+  padding: 40px 0;
+  background-color: var(--kuki-footer-bg);
+  color: var(--kuki-lavanda-oscura);
+}
+
+.footer h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--kuki-lavanda-oscura);
+}
+
+.footer p {
+  font-size: 1.1rem;
+}
+
+.footer .copyright {
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+
+/* Coso responsive */
+@media (max-width: 850px) {
+  .mosaico-sabores,
+  .seccion-diferenciadores,
+  .linea-de-pasos {
+    grid-template-columns: 1fr;
+  }
+
+  .panel-destacado-morado {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .experiencia-kuki {
+    width: 94%;
+    margin-top: 18px;
+  }
+
+  .tarjeta-bienvenida {
+    padding: 40px 18px;
+  }
+
+  .tarjeta-delicia,
+  .caja-propuesta-valor,
+  .panel-destacado-morado,
+  .tarjeta-paso {
+    padding: 25px 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PARTE DE LESLY */
+/* FORMULARIO*/
+.contact-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contact-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #765197;
+    margin: 10px 0;
+}
+
+.contact-subtitle {
+    font-size: 16px;
+    color: #7d6872;
+}
+
+
+/*Diseño del menu de navegacion*/
+
+.navbar {
+    background-color: #ffffff;
+    border: 2px solid #e9a5be;
+    border-radius: 25px;
+
+    padding: 12px 25px;
+    margin: 10px auto;
+
+    width: 95%;
+    max-width: 1400px;
+
+    display: flex;
+    align-items: center;
+    /* AGREGA ESTO: separa el logo a la izquierda y los botones a la derecha */
+    justify-content: space-between; 
+}
+
+/* AGREGA ESTO: si tus .nav-item están dentro de un <ul> o <div> con clase .navbar-nav */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none; /* quita los puntos si es una lista ul */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 5px;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3cfdc;
+    border: 2px solid #f3cfdc;
+    border-radius: 20px;
+    padding: 8px 25px;
+    transition: 0.3s;
+    text-decoration: none; /* quita el subrayado de los enlaces */
+    color: #765199;        /* asegura un color de texto visible */
+    display: inline-block;
+}
+
+.nav-link:hover {
+    background-color: #eba9c1;
+    border-color: #eba9c1;
+}
+
+/* FORMULARIO*/
+
+.contact-section {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    padding: 35px 40px;
+
+    background-color: #ffffff;
+    border: 1px solid #efd8e2;
+    border-radius: 25px;
+    box-shadow: 0 5px 18px rgba(118, 81, 151, 0.08);
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 25px;
+}
+
+.span-all {
+    grid-column: 1 / -1;
+}
+
+.form-group textarea {
+    min-height: 110px;
+    resize: none;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    resize: none;
+}
+
+.contact-form label {
+    color: #151515;
+    font-size: 13px;
+}
+
+.form-group :is(input, textarea) {
+    padding: 14px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: 0;
+    background: transparent;
+    border: 1px solid #d1d1d1;
+}
+
+
+
+/* Cada campo */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Etiquetas */
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #765197;
+    margin-bottom: 8px;
+}
+
+
+/* Campos (nombre, telefono, correo, mensaje)*/
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+
+    background-color: #fffafd;
+    border: 1px solid #dfc9d5;
+    border-radius: 12px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #4b3a43;
+
+    transition: 0.3s;
+}
+
+
+/* PLACEHOLDER */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aa9ba3;
+}
+
+
+/* El efecto de selecion */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #aa4d6f;
+    box-shadow: 0 0 0 3px rgba(170, 77, 111, 0.10);
+    background-color: #ffffff;
+}
+
+
+/* Parte de mensaje */
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+
+/*Diseño del boton */
+
+.submit-btn {
+    grid-column: 1 / 3;
+
+    width: 170px;
+    margin: 5px auto 0;
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 20px;
+
+    background-color: #765197;
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #aa4d6f;
+    transform: translateY(-2px);
+}
+
+
+/* Telefono de contacto */
+
+.phone-contact {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto 45px;
+    padding: 22px;
+
+    text-align: center;
+
+    background-color: #f8f3f7;
+    border: 1px solid #e1d5df;
+    border-radius: 20px;
+}
+
+.phone-text {
+    font-size: 15px;
+    font-weight: 400;
+    color: #6f5b65;
+    margin-bottom: 8px;
+}
+
+.phone-number {
+    display: inline-block;
+
+    color: #765197;
+    font-size: 21px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.phone-number:hover {
+    color: #aa4d6f;
+}
+
+
+/* Diseño de preguntas frecuentes*/
+
+.faq-section {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+
+    font-size: 32px;
+    font-weight: 600;
+    color: #765197;
+
+    margin-bottom: 25px;
+}
+
+
+/* Cada pregunta */
+
+.faq-item {
+    margin-bottom: 12px;
+
+    background-color: white;
+    border: 1px solid #ead7e1;
+    border-radius: 15px;
+
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(118, 81, 151, 0.05);
+}
+
+
+/* Posibles preguntas */
+
+.faq-item summary {
+    padding: 17px 20px;
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #5d426d;
+
+    cursor: pointer;
+    list-style: none;
+}
+
+
+/* cosa del triangulo */
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/* Signos decorativos + */
+
+.faq-item summary::after {
+    content: "+";
+    float: right;
+
+    font-size: 20px;
+    color: #aa4d6f;
+}
+
+
+/* Colores cuano se habre que se vea bien */
+
+.faq-item[open] summary {
+    background-color: #faf1f6;
+    color: #aa4d6f;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+
+/* REspuestas de las preguntas*/
+
+.faq-item p {
+    margin: 0;
+    padding: 0 20px 18px;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #76666e;
+    background-color: #faf1f6;
+}
+
+
+/*Parte de contacto*/
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 95%;
+        padding-top: 25px;
+    }
+
+    .contact-title {
+        font-size: 38px;
+    }
+
+    .contact-subtitle {
+        font-size: 14px;
+    }
+
+    .contact-section {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .submit-btn {
+        grid-column: 1;
+    }
+
+    .phone-contact,
+    .faq-section {
+        width: 100%;
+    }
+
+    .faq-title {
+        font-size: 28px;
+    }
+}
+
+
+/* Asegura que el contenedor active el grid en 2 columnas */
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Aplica esto a la caja del mensaje para que abarque las 2 columnas */
+.form-group.span-all,
+.span-all {
+    grid-column: 1 / -1;
+}
+
+/* Ajustes del textarea para fijar el tamaño de el cuadro de mensaje */
+.form-group textarea {
+    min-height: 110px;
+    max-height: 110px; /* Evita que crezca */
+    resize: none;      /* Oculta la esquina de redimensionar (Amen) */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Parte de WENDY */
+/* --- 2da seccion --- */
+.main-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+    margin-top: 35px;
+   font-family: 'Playfair Display', serif;
+  color: #6a4f82;
+  font-size: 38px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* --- El buscador u el filro--- */
+.controles {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.input-control, 
+.select-control {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 1px solid #e2d3dd;
+  border-radius: 20px;
+  outline: none;
+  background-color: #fbf7f9;
+  color: #5a4b5c;
+
+  /* Aplica la tipografía Poppins */
+  font-family: 'Poppins', sans-serif;
+
+  /* Modifica estos valores para hacerlos más largos */
+  width: 100%;
+  max-width: 280px; 
+}
+
+/* --- Las Tarjetas de Productos --- */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.tarjeta-producto {
+  background-color: #ffffff;
+  border: 1px solid #efe4eb;
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(106, 79, 130, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-producto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(106, 79, 130, 0.1);
+}
+
+.tarjeta-producto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  background-color: #f9f2f5;
+}
+
+.tarjeta-producto h3 {
+    font-family: 'Playfair Display', serif;
+  color: #6a4f82;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.tarjeta-producto p {
+    font-family: 'Poppins', serif;
+  font-size: 13px;
+  color: #7a6b7c;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.tarjeta-producto small {
+    font-family: 'Poppins', serif;
+  font-size: 12px;
+  color: #9a8a9c;
+  margin-bottom: 15px;
+}
+
+.tarjeta-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px dashed #efe4eb;
+}
+
+.precio {
+    font-family: 'Poppins', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6a4f82;
+}
+
+.btn-cotizar {
+    font-family: 'Poppins', serif;
+  background-color: #f2dbe4;
+  color: #6a4f82;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-cotizar:hover {
+  background-color: #e8c6d4;
+}
+
+
+
+
+
+
+/* =========================
+PARTE DE ISAAAAAAAAAA
+   PARTE DE "IMPACTO" (ESTILO QUIÉNES SOMOS)
+========================= */
+
+.impacto-hero {
+    background: #fcf8f4;
+    padding: 90px 0 70px;
+    text-align: center;
+}
+
+.impacto-hero .impacto-mini {
+    color: #aa4d6f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.impacto-hero h1 {
+    color: #765197;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(45px, 5vw, 62px);
+    line-height: 1.15;
+    margin: 15px auto;
+    max-width: 800px;
+}
+
+.impacto-hero h1 strong {
+    font-family: 'Parisienne', cursive;
+    color: #aa4d6f;
+    font-weight: 400;
+}
+
+.impacto-hero p {
+    color: #342b3d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 20px auto 0;
+}
+
+
+/* --- IMPACTO SOCIAL (TARJETAS ESTILO MISIÓN/VISIÓN) --- */
+
+.impacto-social {
+    background: #fcf8f4;
+    padding: 60px 0 90px;
+}
+
+.impacto-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.impacto-intro span {
+    color: #aa4d6f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.impacto-intro h2 {
+    color: #765197;
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    margin: 10px 0 15px;
+}
+
+.impacto-intro p {
+    color: #342b3d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.impacto-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.impacto-card {
+    position: relative;
+    background: #efd8f7;
+    border-radius: 25px;
+    padding: 45px 30px;
+    min-height: 280px;
+    border: 1px solid #eaddeb;
+    box-shadow: 0 10px 30px rgba(93, 65, 115, .08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Detalle de línea igual al de Misión y Visión */
+.impacto-card::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 5px;
+    background: #765197;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+.impacto-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(93, 65, 115, 0.15);
+}
+
+.impacto-card-rosa {
+    background: #f8e4ec;
+}
+
+.impacto-card-rosa::before {
+    background: #aa4d6f;
+}
+
+.impacto-numero {
+    color: #aa4d6f;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.impacto-card h3 {
+    color: #765197;
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.impacto-card-rosa h3 {
+    color: #aa4d6f;
+}
+
+.impacto-card p {
+    color: #342b3d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* --- ACCIONES ECOLÓGICAS (ESTILO VALORES) --- */
+
+.acciones-ecologicas {
+    background: #f4eaf6;
+    padding: 80px 0;
+}
+
+.acciones-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.acciones-header span {
+    color: #aa4d6f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.acciones-header h2 {
+    color: #765197;
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    margin: 10px 0 15px;
+}
+
+.acciones-header p {
+    color: #342b3d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.acciones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.accion-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 25px;
+    border: 1px solid #eaddeb;
+    box-shadow: 0 10px 30px rgba(93, 65, 115, .06);
+    text-align: center;
+}
+
+.accion-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #f8e4ec;
+    color: #aa4d6f;
+    border: 1px solid #cdb4d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin: 0 auto 20px;
+}
+
+.accion-card h3 {
+    color: #765197;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.accion-card p {
+    color: #342b3d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* --- ACCIONES SOCIALES (ESTILO COMPROMISO) --- */
+
+.acciones-sociales {
+    background: #fcf8f4;
+    padding: 90px 0;
+}
+
+.social-content {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.social-text span {
+    color: #aa4d6f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.social-text h2 {
+    color: #765197;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 1.15;
+    margin: 10px 0 20px;
+}
+
+.social-text h2 strong {
+    font-family: 'Parisienne', cursive;
+    color: #aa4d6f;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.social-text p {
+    color: #342b3d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 22px 25px;
+    border: 1px solid #eaddeb;
+    box-shadow: 0 8px 20px rgba(93, 65, 115, 0.05);
+}
+
+.social-item > span {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #aa4d6f;
+}
+
+.social-item h3 {
+    color: #765197;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.social-item p {
+    color: #342b3d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* --- BENEFICIOS DE LA COMUNIDAD --- */
+
+.beneficios-comunidad {
+    background: #f4eaf6;
+    padding: 90px 0;
+}
+
+.beneficios-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.beneficios-header span {
+    color: #aa4d6f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.beneficios-header h2 {
+    color: #765197;
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.beneficio {
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 25px;
+    border-left: 6px solid #765197;
+    border-top: 1px solid #eaddeb;
+    border-right: 1px solid #eaddeb;
+    border-bottom: 1px solid #eaddeb;
+    box-shadow: 0 10px 30px rgba(93, 65, 115, 0.06);
+}
+
+.beneficio-rosa {
+    border-left-color: #aa4d6f;
+}
+
+.beneficio-numero {
+    color: #aa4d6f;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.beneficio h3 {
+    color: #765197;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.beneficio-rosa h3 {
+    color: #aa4d6f;
+}
+
+.beneficio p {
+    color: #342b3d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* --- COMPROMISO FINAL --- */
+
+.impacto-compromiso {
+    background: #fcf8f4;
+    padding: 90px 0;
+}
+
+.compromiso-impacto-box {
+    background: #efd8f7;
+    border-radius: 35px;
+    padding: 65px 60px;
+    text-align: center;
+    max-width: 950px;
+    margin: auto;
+    border: 1px solid #eaddeb;
+    box-shadow: 0 12px 35px rgba(93, 65, 115, 0.08);
+}
+
+.compromiso-impacto-box span {
+    color: #aa4d6f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.compromiso-impacto-box h2 {
+    color: #765197;
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    margin: 15px 0 20px;
+}
+
+.compromiso-impacto-box h2 strong {
+    font-family: 'Parisienne', cursive;
+    color: #aa4d6f;
+    font-weight: 400;
+}
+
+.compromiso-impacto-box p {
+    color: #342b3d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.impacto-btn {
+    display: inline-block;
+    background: #765197;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.impacto-btn:hover {
+    background: #aa4d6f;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .impacto-tarjetas,
+    .acciones-grid,
+    .social-content,
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .impacto-hero h1 { font-size: 40px; }
+    .impacto-intro h2, 
+    .acciones-header h2, 
+    .beneficios-header h2,
+    .social-text h2,
+    .compromiso-impacto-box h2 { font-size: 34px; }
+    
+    .compromiso-impacto-box { padding: 40px 20px; }
+}
